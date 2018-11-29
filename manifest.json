@@ -1,0 +1,85 @@
+{
+	"_version": "1.4.0",
+	"sap.app": {
+		"_version": "1.2.0",
+		"id": "z.acc.query.analyze",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"title": "{{DS_TITLE}}",
+		"ach": "FIN-FIO-CLM",
+		"dataSources": {},
+		"resources": "resources.json",
+		"applicationVersion": {
+			"version": "5.0.8"
+		}
+	},
+	"sap.ui": {
+		"_version": "1.1.0",
+		"technology": "UI5",
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": false,
+			"phone": false
+		},
+		"supportedThemes": [
+			"sap_hcb",
+			"sap_bluecrystal"
+		]
+	},
+	"sap.ui5": {
+		"_version": "1.1.0",
+		"dependencies": {
+			"minUI5Version": "1.48.4",
+			"libs": {
+				"sap.m": {},
+				"sap.ui.generic.app": {},
+				"sap.viz": {},
+				"sap.zen.commons": {},
+				"sap.zen.crosstab": {},
+				"sap.zen.dsh": {}
+			},
+			"components": {}
+		},
+		"config": {
+			"fullWidth": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "z.acc.query.analyze.i18n.i18n"
+				}
+			}
+		},
+		"routing": {
+			"config": {
+				"viewType": "XML",
+				"viewPath": "z.acc.query.analyze.view",
+				"targetControl": "fioriContent",
+				"targetAggregation": "pages",
+				"clearTarget": false
+			},
+			"routes": []
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"services": {
+			"ShellUIService": {
+				"factoryName": "sap.ushell.ui5service.ShellUIService"
+			}
+		}
+	},
+	"sap.platform.abap": {
+		"_version": "1.1.0",
+		"uri": "/sap/bc/ui5_ui5/sap/z_ds_analyze"
+	},
+	"sap.fiori": {
+		"_version": "1.1.0",
+		"registrationIds": [
+			"F1035"
+		],
+		"archeType": "reusecomponent"
+	}
+}
