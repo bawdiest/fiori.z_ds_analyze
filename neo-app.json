@@ -1,0 +1,53 @@
+{
+  "welcomeFile": "index.html",
+  "routes": [
+    {
+      "path": "/sap/opu/odata",
+      "target": {
+        "type": "destination",
+        "name": "S41710em",
+        "entryPath": "/sap/opu/odata"
+      },
+      "description": "S41710em"
+    },
+    {
+      "path": "/sap/bc/ui5_ui5",
+      "target": {
+        "type": "destination",
+        "name": "S41710em",
+        "entryPath": "/sap/bc/ui5_ui5"
+      },
+      "description": "S41710em"
+    },
+    {
+      "path": "/resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/resources",
+        "version": "1.52.8"
+      },
+      "description": "SAPUI5 Resources"
+    },
+    {
+      "path": "/test-resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/test-resources",
+        "version": "1.52.8"
+      },
+      "description": "SAPUI5 Test Resources"
+    },
+    {
+      "path": "/resources/z/acc/query/analyze/Component",
+      "target": {
+        "type": "destination",
+        "name": "S41710em",
+        "entryPath": "/sap/bc/lrep/flex/data/~KsZZqzODDuGrIUN8QSX771chCfM=~/z.acc.query.analyze.Component",
+        "preferLocal": true
+      },
+      "description": "z/acc/query/analyze/Component Reuse Library"
+    }
+  ]
+}
