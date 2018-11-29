@@ -1,0 +1,199 @@
+/************************************************************************************/
+/* Template */
+/* Generic Analysis */
+/* $Change: 151928 $ $Id: //ZEN/zen.rt.fw/dev/dt/_content/DS 1.6/repository/GENERIC_ANALYSIS_NW/GENERIC_ANALYSIS_SAPUI5.css#2 $ */
+/************************************************************************************/
+
+/*** Flicker ***/
+#DATA_SOURCE_BROWSER_control .sapUiDlg {
+    top: 20% !important;
+    left: 25% !important;
+}
+
+/*** Text Scroll ***/
+.myTextScroll{
+	overflow: auto !important;
+}
+/*** Border ***/
+.myBorderAll {
+	border: 1px solid #cdcdcd !important;
+}
+
+/*** Strike through ***/
+.myLineThrough {
+	text-decoration: line-through;
+}
+
+/*** Background ***/
+.myBackgroundWhite{
+	background-color: #ffffff !important;
+}
+.myBackgroundDarkGrey {
+	background-color: #596061 !important; 
+}
+
+/*** Icons ***/
+.ICON_ACTIVE {
+	background-color: #0080C0 !important;
+	color: white !important;
+}
+
+/*** Header ***/
+.myHeader {
+	background-color: #ffffff !important;
+	border-top: 5px solid #007cc0 !important;
+}
+.myHeaderText {
+	font-size: 18px !important; 
+	color: #666666 !important;
+	text-align: center !important;
+	line-height: 35px !important;
+}
+
+/*** Footer ***/
+.myFooterBackground {
+	background-color: rgba(54,62,67,0.96) !important;
+}
+.myFooterText {
+	color: #ffffff !important;
+	font-size: 14px !important;
+}
+
+/*** Dialog ***/
+.myDialogHeader {
+	background-color: #ffffff !important;
+	border-bottom: 1px solid #cdcdcd !important;
+}
+.myDialogHeaderText {
+	font-size: 16px !important; 
+	font-weight: bold !important;
+	color: #666666 !important;
+	text-align: left !important;
+	line-height: 16px !important;
+}
+.myDialogText {
+	font-size: 12px !important; 
+	font-weight: bold !important;
+	color: #666666 !important;
+	text-align: left !important;
+	line-height: 20px !important;
+}
+.myDialogBorder {
+	border: 1px solid rgba(154,154,154,0.6) !important;
+	box-shadow: 0 4px 17px rgba(0,0,0,0.4);
+}
+
+/*** ActionSheet ***/  
+.myActionSheet {
+	background-color:transparent;
+}  
+.myActionSheet button {
+	border-radius: 0 !important;
+}
+
+/* ActionSheet Placement: Top */
+.myActionSheetTop {
+	border-bottom: 1px solid #dddddd;
+}
+.myActionSheetTop:before, .myActionSheetTop:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-color: transparent;
+	border-bottom: 0;
+}
+/* Stroke */
+.myActionSheetTop:before {
+	bottom: -15px;
+	right: 1px;
+	/* If 1px darken stroke slightly */
+	border-top-color: rgba(230,230,230,0.6);
+	border-width: 15px;
+}
+/* Fill */
+.myActionSheetTop:after {
+	bottom: -14px;
+	right: 1px;
+	margin-right:0px;
+	border-top-color: rgb(60,68,73);
+	border-width: 14px;
+}  
+.myActionSheetTop .sapUiBtnStd.sapUiBtnNorm.sapUiBtnS:not(:hover) {
+	background-color: rgba(54,62,67,0.96);
+	color:#ffffff;
+	border-bottom:none;
+	text-align:left;
+	border-color: rgba(154,154,154,0.6);
+}
+.myActionSheetTop .sapUiBtnStd.sapUiBtnNorm.sapUiBtnS:hover {
+	color:#ffffff;
+	background-color: #333333;
+	border-color: #white;
+	border-bottom:none;
+	text-align:left;
+}  
+.myActionSheetTop .sapUiBtnDsbl:not(:hover) {
+	background-color: rgba(54,62,67,0.96) !important;
+	opacity: 1;
+	color:#ffffff;
+	border-bottom:none;
+	text-align:left;
+	border-color: rgba(154,154,154,0.6);
+}
+.myActionSheetTop .sapUiBtnDsbl:hover {
+	color:#ffffff;
+	background-color: #333333 !important;
+	opacity: 1;
+	border-color: #white;
+	border-bottom:none;
+	text-align:left;
+}
+.myActionSheetTop .sapUiBtnDsbl.sapUiBtnNorm.sapUiBtnS {
+	opacity: 1;
+}
+
+/* ActionSheet Placement: Bottom */
+.myActionSheetBottom {
+	border-top: 1px solid #dddddd;
+}		
+.myActionSheetBottom:before, .myActionSheetBottom:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-color: transparent;
+	border-top: 0;
+}
+/* Stroke */
+.myActionSheetBottom:before {
+	top:  -16px;
+	right: 1px;
+	/* If 1px darken stroke slightly */
+	border-bottom-color: #dddddd;
+	border-width: 16px;
+}
+/* Fill */
+.myActionSheetBottom:after {
+	top: -15px;
+	right: 1px;
+	margin-left: 1px;
+	border-bottom-color: rgb(60,68,73);
+	border-width: 15px;
+}
+.myActionSheetBottom .sapUiBtnStd.sapUiBtnNorm.sapUiBtnS:not(:hover){
+	background-color: rgb(60,68,73);
+	color:#ffffff;
+	border-top:none;
+	text-align:left;
+	border-color: #dddddd;
+}
+.myActionSheetBottom .sapUiBtnStd.sapUiBtnNorm.sapUiBtnS:hover {
+	color:#ffffff;
+	background-color: #333333;
+	border-color: #white;
+	border-top:none;
+	text-align:left;
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
