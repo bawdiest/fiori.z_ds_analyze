@@ -136,6 +136,7 @@ sap.ui.define(["sap/ui/core/UIComponent", "sap/ui/generic/app/navigation/service
 
 			function i() {
 				var url = sap.ui.resource("z.acc.query.analyze", "applications/").toString();
+				url = "hallo";
 				d = new D({
 					height: "100%",
 					width: "100%",
